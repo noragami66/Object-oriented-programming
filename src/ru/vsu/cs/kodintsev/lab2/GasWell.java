@@ -18,7 +18,7 @@ public class GasWell extends Well {
 
     public double calculateProfit() {
         int value = getReserves() * 50;
-        System.out.println("Ценность газовой скважины " + getWellName() + ": " + value);
+        System.out.println("Ожидаемая прибыль " + getWellName() + ": " + value);
         return value;
     }
 
