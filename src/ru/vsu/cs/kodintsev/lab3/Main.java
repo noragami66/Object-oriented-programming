@@ -25,5 +25,6 @@ public class Main {
         System.out.println("Cтатический метод для количества Area: " + getAreaCount());
         System.out.println("Cтатический метод для количества Well: " + getWellCount());
         System.out.println("Cтатический метод для количества WellOnArea: " + getWellOnAreaCount());
+        //
     }
 }
