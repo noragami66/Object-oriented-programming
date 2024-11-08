@@ -5,15 +5,15 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
-    public final int ID;             //Значимый
-    private final String surname;     //Значимый
-    private final String name;        //Значимый
-    private int[] marks;              //Значимый, изменяемый
-    private String patronymic;        //Незначимый
-    private int age;                  //Незначимый
-    private int group;                //Незначимый
-    private int subGroup;             //Незначимый
-    private LocalDate LastSeen;       //Незначимый,изменяемый
+    public final int ID;
+    private final String surname;
+    private final String name;
+    private int[] marks;
+    private String patronymic;
+    private int age;
+    private int group;
+    private int subGroup;
+    private LocalDate LastSeen;
 
     public Student(int ID,String surname,String name, String patronymic, int age,  int group, int subGroup,int[] marks, LocalDate LastSeen) {
         this.ID = ID;
@@ -60,10 +60,10 @@ public class Student {
 
         @Override
     public boolean equals(Object o) {
-        if (this == o) return true;                                 // проверка на равенство ссылок, является ли сравниваемый объект тем же
-        if (o == null || getClass() != o.getClass()) return false;  // проверка на объект другого типа
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        if (this.hashCode() != student.hashCode()) return false;    // сравниваем равенство hashcode (опционально)
+        if (this.hashCode() != student.hashCode()) return false;
         return ID == student.ID && Objects.equals(surname, student.surname) && Objects.equals(name, student.name) && Objects.deepEquals(marks, student.marks);
     }
 

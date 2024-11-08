@@ -21,10 +21,10 @@ public class Main {
 //        firstStudent.getNewMark(3);                      // получить новую оценку
 //        firstStudent.updateLastSeen();                   // обновить вход
 //
-//        System.out.println("Сравниваем студента один и его копию: " + firstStudent.equals(copyFirtsStudent));
-//        System.out.println("Сравниваем студента один и второго студента: " +firstStudent.equals(secondStudent));;
-//        System.out.println("Хешкод первого студента " + firstStudent.hashCode());
-//        System.out.println("Хешкод копии " +copyFirtsStudent.hashCode());
+        System.out.println("Сравниваем студента один и его копию: " + firstStudent.equals(copyFirtsStudent));
+        System.out.println("Сравниваем студента один и второго студента: " +firstStudent.equals(secondStudent));;
+        System.out.println("Хешкод первого студента " + firstStudent.hashCode());
+        System.out.println("Хешкод копии " +copyFirtsStudent.hashCode());
 
         ArrayList<Student> studentList = new ArrayList<>();
         studentList.add(firstStudent);
